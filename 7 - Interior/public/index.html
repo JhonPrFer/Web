@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Scope+One&display=swap" rel="stylesheet">
+    <title>Interior</title>
+</head>
+<body>
+   <main>
+        <section class="form-section">
+                <form>
+                    <p>Contact Us</p>
+                    <input type="text" placeholder="Name" required minlength="3" id="name" autofocus pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$">
+                    <input type="email" placeholder="Email" required minlength="5" id="email" >
+                    <textarea id="mesage" placeholder="What you wanna say ?" required></textarea>
+                    <input type="Submit" value="Submit" id="submit-btn" class="submit-btn" onsubmit="validar()">
+                </form>
+                <div class="form-image">
+                    <img src="images/INTERIOR.svg" alt="">
+                </div>
+        </section>
+   </main>
+</body>
+<script src="script.js"></script>
+</html>

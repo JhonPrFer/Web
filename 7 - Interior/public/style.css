@@ -1,0 +1,208 @@
+
+/* zerando estilos iniciais */
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+}
+
+/* imagem de fundo */
+main{
+    background: url(./images/bg.png)center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* seção que contem o form e a imagem */
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 60%;
+}
+
+/* estilização do formulário */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #E5E5E5;
+    width: 50%;
+    height: 100%;
+}
+
+form p{
+    font-size: 2.25rem;
+    font-family: "Scope One", serif;
+    margin-bottom: 25px;
+    color: #303234;
+}
+
+form input{
+    padding: 20px 120px 20px 20px;
+    border-radius: 10px;
+    font-size: 1.125rem;
+    font-family: "Roboto", serif;
+    background-color: #FBFCFD;
+}
+
+form textarea{
+    padding: 20px 130px 120px 20px;
+    resize: none;
+    border-radius: 10px;
+    overflow-y: auto;
+    font-size: 1.125rem;
+    font-family: "Roboto", serif;
+    background-color: #FBFCFD;
+}
+
+form input::placeholder , textarea::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.submit-btn{
+    padding: 14px 28px;
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "Roboto", serif;
+    cursor: pointer;
+    background-color: #FBFCFD;
+    border-radius: 0;
+}
+
+/* estilização da imagem do formulário */
+.form-image{
+    background: url(images/sectionbg.png)center/cover no-repeat;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.form-image img{
+    width: 70%;
+}
+
+/* responsividade telas de 2000px + */
+@media (min-width: 2000px){
+
+    form p {
+        font-size: 2.50rem;
+    }
+
+    form input, form textarea{
+        font-size: 1.75rem;
+    }
+
+    form textarea{
+        padding: 22px 150px 140px 22px;
+    }
+
+    .submit-btn{
+        font-size: 1.7rem;
+    }
+}
+
+/* responsividade telas de 980px - 1400px */
+@media (max-width: 1400px) {
+    form{
+        gap: 30px;
+    }
+
+    form p{
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    form input{
+        padding: 16px 80px 16px 16px;
+        font-size: 1rem;
+    }
+
+    form textarea{
+        padding: 16px 90px 70px 16px;
+        font-size: 1rem;
+    }
+
+    .submit-btn{
+        font-size: 1.125rem;
+        margin: 0;
+    }
+    
+}
+
+/* responsividade telas de 768px - 980px */
+@media (max-width: 980px){
+
+    form{
+        gap: 20px;
+    }
+
+    form p{
+        font-size: 2.25rem;
+    }
+
+    form input{
+        padding: 14px 50px 14px 14px;
+        font-size: 0.875rem;
+    }
+
+    form textarea{
+        padding: 14px 60px 60px 14px;
+        font-size: 0.875rem;
+    }
+
+    .submit-btn{
+        font-size: 1rem;
+    }
+}
+
+/* responsividade telas de 400px - 768px(mobile)*/
+@media(max-width: 768px){
+
+    .form-image{
+        display: none;
+    }
+
+    .form-section{
+        width: 80%;
+        height: 90%;
+    }
+
+    .form-section form{
+        width: 90%;
+    }
+
+    form input{
+        padding: 14px 70px 14px 14px;
+        font-size: 1rem;
+    }
+    
+    form textarea{
+        padding: 14px 80px 80px 14px;
+        font-size: 1rem;
+    }
+}
+
+/* responsividade telas de  < 400px */
+@media (max-width: 400px){
+
+    form p{
+        font-size: 2.25rem;
+    }
+    form input{
+        padding: 12px 10px 12px 12px;
+    }
+    
+    form textarea{
+        padding: 14px 20px 40px 14px;
+    }
+}

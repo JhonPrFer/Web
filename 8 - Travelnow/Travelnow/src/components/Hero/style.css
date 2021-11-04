@@ -1,0 +1,137 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    padding-top:83px;
+    margin-top: 63px;
+    background-color: #fff;
+}
+
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+    max-width: 620px;
+}
+
+.hero_text_title{
+    font-size: 4.75rem;
+    font-weight: 400;
+    font-family: "Crimson Text", sans-serif;
+    color: #0F214F;
+}
+
+.hero_text_paragrath{
+    font-size: 1.125rem;
+    font-weight: 300;
+    font-family: "Nunito", sans-serif;
+    color: #3D3D3D;
+}
+
+.search_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 27px;
+    border-radius: 100px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.21);
+}
+
+.search_box_input{
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    color: #FBB667;
+}
+
+.search_box_input:focus{
+    outline: 0;
+}
+
+.search_box_input::placeholder{
+    color: #FBB667;
+}
+
+.search_box_button{
+    padding: 11px 57px;
+    background-color: #FBB667;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+}
+
+.hero_image{
+    width: 50%;
+    width: 674px;
+}
+
+@media (max-width:1260px){
+
+    .hero_text_title{
+        font-size: 48px;
+    }
+
+    .hero_text_paragrath{
+        font-size: 1rem;
+    }
+
+    .hero_image{
+        width:40%
+    }
+
+    .search_box_input{
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    .search_box_button{
+        font-size: 1rem;
+        padding: 7px 40px;
+    }
+
+}
+
+@media (max-width:900px){
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        margin-top: 81px;
+    }
+
+    .hero_text{
+        width: 90%;
+        justify-content: flex-start; 
+    }
+
+    .hero_text_title , .hero_text_paragrath{
+        width: 100%;
+    }
+
+    .hero_text_title{
+        font-size: 1.875rem;
+    }
+
+    .search_box{
+        padding: 9px 30px;
+    }
+    
+    .hero_text_paragrath{
+        font-size: 0.9375rem;
+    }
+
+    .search_box_button{
+        padding: 4px 25px;
+    }
+
+}
+
+@media (max-width:768px){
+    .hero_image{
+        width: 90%;
+    }
+}

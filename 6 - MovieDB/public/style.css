@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #ff0015;
+    color: #000;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+header input{
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.575);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+input:focus{
+    outline: 0;
+}
+
+header button{
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #ff0015;
+    border: 1px solid #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+}
+
+header button:hover{
+    background-color: #000;
+    color: #ff0015;
+
+}
+
+main{
+    background-color: #000;
+    color: #fff;
+}
+
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0 ;
+    color: #ff0015;
+    font-weight: 500;
+}
+
+.pages button{
+    cursor: pointer;
+    padding: 6px 20px;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #000;
+    color: #ff0015;
+    border: 1px solid #ff0015;
+    transition: .5s;
+}
+
+.pages button:hover{
+    background-color: #ff0015;
+    color: #000;
+}
+
+.movies{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.movie{
+    width: 333.33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.movie img {
+    height: 500px;
+}
+
+.movie_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.movie_info span{
+    color: #ff0015;
+    font-weight: 700;
+}
+
+.overview{
+    max-height:80px;
+    overflow-y: auto;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #000;
+    color: #ff0015;
+    font-size: 1.25rem;
+    font-weight: 70;
+}
+
+@media (min-width: 2560px){
+    .movies{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (max-width:1160px){
+    .movies{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header div{
+        display: flex;
+    }
+    .movies{
+        grid-template-columns: auto;
+    }
+    .movie{
+        width: 310px;
+    }
+    .movie img{
+        width: 310px;
+        height: 450px;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ff0015;
+    border-radius: 3px;
+}
