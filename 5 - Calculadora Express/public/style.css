@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+/* cores: #0A0908 #04151F #183A37 #fff*/
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    background-color: #640D14;
+    color: #fff; 
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputs div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputs label{
+    font-size: 1.20em;
+    width: 181px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-family: 'Montserrat Alternates', sans-serif;
+    }
+
+input{
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #F5E0B7;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #640D14;
+}
+
+input::-webkit-inner-spin-button ,input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+select{
+    width: 150px;
+    padding: 5px;
+    border-radius: 3px;
+    color: #640D14;
+    background-color: #F5E0B7;
+}
+
+.select{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.select label{
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+select{
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+option{
+    font-family: 'Montserrat Alternates',sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+button{
+    padding: 5px;
+    width: 150px;
+    border-radius: 3px;
+    background-color: #F5E0B7;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #640D14;
+    cursor: pointer;
+    border: 1px solid #F5E0B7;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #640D14;
+    color: #F5E0B7;
+    border: 1px solid #F5E0B7;
+}
+
+
+ 

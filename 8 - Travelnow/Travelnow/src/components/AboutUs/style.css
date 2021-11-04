@@ -1,0 +1,113 @@
+.about_us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 150px;
+    gap: 80px;
+    background-color: #fff;
+}
+
+.about_us_image{
+    width: 50%;
+    max-width: 703px;
+}
+
+.about_us_text{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}   
+
+.about_us_title{
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Crimson text", sans-serif;
+}
+
+.about_us_cards_div{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.about_us_card{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.about_us_card_image{
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about_us_card_text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 330px;
+}
+
+.about_us_card_title{
+    font-size: 1.625rem;
+    font-weight: 400;
+    font-family: "Crimson text", sans-serif;
+}
+
+.about_us_card_paragraph{
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-family: "Nunito", sans-serif;
+    color: #3D3D3D;
+}
+
+@media (max-width: 1300px){
+
+    .about_us_image{
+        width: 40%;
+    }
+
+    .about_us{
+        gap: 40px;
+    }
+
+    .about_us_card_text{
+        width: 330px;
+    }
+}
+
+@media (max-width: 768px){
+    .about_us{
+        flex-direction: column;
+        padding: 80px 0 74px;
+    }
+
+    .about_us_image{
+        width: 80%;
+    }
+
+    .about_us_title{
+        font-size:1.625rem;
+    }
+
+    .about_us_text{
+        align-items: center;
+    }
+    .about_us_cards_div{
+        width: 90%;
+    }
+
+    .about_us_card_text{
+        width: 80%;
+    }
+
+    .about_us_card_title{
+        font-size: 1.40625rem;
+    }
+
+    .about_us_card_paragraph{
+        font-size: 0.9375rem;
+    }
+
+}
