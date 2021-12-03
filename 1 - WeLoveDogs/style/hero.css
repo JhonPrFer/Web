@@ -1,0 +1,35 @@
+.hero{
+    display: grid;
+    grid-template-columns: 25% auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #fff;
+    gap: 30px;
+}
+
+.hero_aside{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aside_texto{
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.btnaside{
+    width: max-content;
+    padding: 13px 55px;
+    background-color: #7ED321;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1C4701;
+    cursor: pointer;
+}
+
+.img_hero{
+    max-width: 640px;
+}

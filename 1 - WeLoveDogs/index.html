@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>WeLoveDogs</title>
-</head>
-<body>
-    <header>
-        <p onclick="document.location ='index.html'">we<span>love</span>dogs</p>
-        <nav>
-            <a href="quem-somos.html">QUEM SOMOS</a>
-            <a href="blog.html">BLOG</a>
-            <button onclick="document.location ='contato.html'">INSCREVER</button>
-        </nav>
-    </header>
-        <main class="principal-home">
-            <div class="conteudo-home">
-                <p>Junte-se a comunidade apaixonada por cachorros</p>
-                <button onclick="document.location ='contato.html'">Inscrever-se</button>
-            </div>
-            <img src="images/Figure1.jpg" alt="Mulher e cachorro" >
-        </main>
-</body>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/hero.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+        <title>We love Dogs</title>
+
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="logo">we<span class="destaque">love</span>dogs</h1>
+            <nav class="nav">
+                <a href="#" class="link">QUEM SOMOS</a>
+                <a href="#" class="link">BLOG</a>
+                <button class="btn btnheader">INCREVER</button>
+            </nav>
+        </header>
+            <main class="main">
+                <section class="hero">
+                    <aside class="hero_aside">
+                        <p class="aside_texto">Junte-se a comunidade apaixonada por cachorros</p>
+                        <button class="btn btnaside">Inscrever-se</button>
+                    </aside>
+                    <img class="img_hero" src="./images/Figure1.jpg" alt="hero_img"></img>
+                </section>
+            </main>
+    </body>
 </html>

@@ -1,0 +1,48 @@
+.header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 27px 15px;
+    background-color: #fff;
+}
+
+.logo{
+    font-size: 4.8rem;
+}
+
+.destaque{
+    color: #7ED321;
+    font-size: 4.8rem;
+}
+
+.nav{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.link{
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.link:hover{
+    content: '';
+    border-bottom: 1px solid;
+}
+
+.btnheader{
+    padding: 9px 32px;
+    background-color: rgba(126, 211, 33, 0.4);
+    border-radius: 15px;
+    color: #1C4701;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btnheader:hover{
+    background-color: #7ED321;
+}
