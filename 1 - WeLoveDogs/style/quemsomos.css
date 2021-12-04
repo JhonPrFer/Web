@@ -1,0 +1,31 @@
+.quem_somos{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   margin-top: 60px;
+}
+
+.titulo{
+    font-size: 4.8rem;
+}
+
+.quemsomos_conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    max-width: 687px;
+    gap: 15px;
+}
+
+.texto{
+    font-size: 1.6rem;
+}
+
+.quemsomos_img{
+    max-width: 354px;
+}
+

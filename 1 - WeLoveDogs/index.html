@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/header.css">
         <link rel="stylesheet" href="style/hero.css">
+        <link rel="stylesheet" href="style/quemsomos.css">
+        <link rel="stylesheet" href="style/blog.css">
+        <link rel="stylesheet" href="style/inscricao.css">
+        <link rel="stylesheet" href="style/footer.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,6 +36,65 @@
                     </aside>
                     <img class="img_hero" src="./images/Figure1.jpg" alt="hero_img"></img>
                 </section>
+                <section class="quem_somos">
+                    <h1 class="titulo">QUEM SOMOS</h1>
+                    <article class="quemsomos_conteudo">
+                        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim blandit volutpat. Urna duis convallis convallis tellus id interdum velit laoreet id. Sed felis eget velit aliquet sagittis id consectetur purus ut. Orci phasellus egestas tellus rutrum tellus. At elementum eu facilisis sed.  Quam elementum pulvinar etiam non quam lacus. Viverra tellus in hac habitasse platea. Congue eu consequat ac felis donec et odio. Amet cursus sit amet dictum sit amet. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Consectetur a erat nam at.</p>
+                        <img src="./images/Figure2.jpg" alt="" class="quemsomos_img">
+                    </article>
+                </section>
+                <section class="blog">
+                    <h1 class="titulo">Blog</h1>
+                    <section class="posts">
+                        <article class="post">
+                            <img class="img_post" src="./images/Figure3.jpg" alt="imagem post">
+                            <div class="conteudo_post">
+                                <h3 class="titulo_post">Título do Post</h3>
+                                <p class="texto_post">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim blandit volutpat. Urna duis convallis convallis tellus id interdum velit laoreet id. Sed felis eget velit aliquet sagittis id consectetur purus ut. Orci phasellus egestas tellus rutrum tellus. At elementum eu facilisis sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim blandit volutpat. Urna duis convallis convallis tellus id interdum velit laoreet id. Sed felis eget velit aliquet sagittis id consectetur purus ut. Orci phasellus egestas tellus rutrum tellus. At elementum eu facilisis sed. </p>
+                            </div>
+                        </article>
+                        <article class="post">
+                            <img class="img_post" src="./images/Figure4.jpg" alt="imagem post">
+                            <div class="conteudo_post"> 
+                                <h3 class="titulo_post">Título do Post</h3>
+                                <p class="texto_post">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim blandit volutpat. Urna duis convallis convallis tellus id interdum velit laoreet id. Sed felis eget velit aliquet sagittis id consectetur purus ut. Orci phasellus egestas tellus rutrum tellus. At elementum eu facilisis sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim blandit volutpat. Urna duis convallis convallis tellus id interdum velit laoreet id. Sed felis eget velit aliquet sagittis id consectetur purus ut. Orci phasellus egestas tellus rutrum tellus. At elementum eu facilisis sed. </p>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <section class="formulario">
+                    <h1 class="titulo">Inscrição</h1>
+                    <div class="conteudo">
+                        <form class="form">
+                            <div class="campo_form">
+                                <label class="label" for="fnome">Nome</label>
+                                <input class="input" type="text" placeholder="Seu nome" name="fnome">
+                            </div>
+                            <div class="campo_form">
+                                <label class="label" for="fidade">idade</label>
+                                <input class="input" type="number" placeholder="18" name="fidade">
+                            </div>
+                            <div class="campo_form">
+                                <label class="label" for="femail">Email</label>
+                                <input class="input" type="email" placeholder="exemplo@exemplo">
+                            </div>
+                            <div class="campo_form">
+                                <label class="label" for="fmensagem">Ama chachorros?</label>
+                                <textarea class="textarea" name="fmensagem" id="fmensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                            </div>
+                            <input class="btn_enviar" type="submit" value="Enviar">
+                        </form>
+                        <img class="form_img" src="images/Figure5.jpg" alt="imagem form">
+                    </div>
+                </section>
             </main>
+            <footer class="footer">
+                <p class="footer_texto"></p>
+            </footer>
     </body>
+    <script>
+        let data = new Date().getFullYear()
+        let footer = document.querySelector(".footer_texto")
+        footer.innerHTML=`We love dogs &copy ${data}`
+    </script>
 </html>
